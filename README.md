@@ -1,2 +1,2 @@
-# env-scripts
-Set of scripts that starts up some development enviroments
+# awesome-scripts
+Set of scripts that can do awesome stuff for developers
