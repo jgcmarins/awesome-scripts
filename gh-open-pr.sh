@@ -1,0 +1,1 @@
+gh repo list jgcmarins --limit 250 --json name | jq -r '.[].name' | xargs -I {} sh -c 'gh pr list -R "jgcmarins/{}" --state open --limit 1 --json number | jq -e "length>0" >/dev/null && echo "jgcmarins/{}"'
